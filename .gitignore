@@ -1,0 +1,91 @@
+# ============================
+# Unreal Engine Git Ignore
+# With Git LFS Support
+# Works for UE 5.4 / 5.x / 4.x
+# ============================
+
+# Ignore build artifacts
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+
+# Ignore IDE folders
+.vscode/
+.vs/
+.idea/
+
+# Ignore project user/session files
+*.suo
+*.user
+*.userprefs
+*.sln.docstates
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# Ignore macOS/Windows system files
+.DS_Store
+Thumbs.db
+
+# Ignore generated project files
+*.xcodeproj
+*.xcworkspace
+*.xcconfig
+
+# Ignore cached shader and build files
+*.pch
+*.pdb
+*.idb
+*.obj
+*.mod
+*.log
+*.tlog
+*.tmp
+*.cache
+
+# Ignore UHT-generated files
+*.generated.h
+*.generated.cpp
+
+# Ignore autosaves, backups, crash reports
+Saved/Autosaves/
+Saved/Backup/
+Saved/Crashes/
+*.bak
+
+# Ignore plugin artifacts
+Plugins/*/Intermediate/
+Plugins/*/Binaries/
+
+# Allow these folders (keep content, ignore cache)
+!Content/
+!Source/
+!Config/
+!Plugins/
+
+# ============================
+# GIT LFS SECTION (IMPORTANT)
+# Large binary UE assets are skipped from normal Git
+# ============================
+
+# LFS tracked files are defined in .gitattributes
+*.uasset
+*.umap
+*.wav
+*.mp3
+*.mp4
+*.png
+*.jpg
+*.jpeg
+*.tga
+*.bmp
+*.exr
+*.psd
+*.fbx
+*.uplugin
+*.uproject
+
+# END
